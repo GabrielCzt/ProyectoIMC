@@ -1,0 +1,55 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - My ASP.NET Aplication</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="~/Estilos/Styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container body-content">
+        <header class="container">
+            <div class="row cabecera">
+                <div class="col-sm-12 col-md-12 d-flex justify-content-center align-items-center">
+                    <p>Hospital - 5 de Mayo - Puebla</p>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand" href="#">
+                    <img src="~/Imagenes/Bootstrap.png" width="30" height="30" class="d-inline-block align-top img-fluid" alt="Logo Bootstrap" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarnavAltMarkup">
+                    <a class="nav-link" href="~/Home/Index">Principal</a>
+                    <a class="nav-link" href="~/Home/IMC">IMC</a>
+                    <a class="nav-link" href="~/Home/Pagar">Pagos</a>
+                    <a class="nav-link" href="~/Home/Contacto"></a>
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-outline-primary me-1" href="#">F</a>
+                    <a class="btn-outline-danger" href="#">Y</a>
+                </div>
+            </div>
+        </nav>
+        <section>
+            @RenderBody()
+        </section>
+        <footer class="container">
+            <div class="row mt-2 pie">
+                <div class="col-sm-12 col-md-12 text-center">
+                    <p class="mt-1">&copy; 2022-2023 - Derechos Reservados <span></span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
